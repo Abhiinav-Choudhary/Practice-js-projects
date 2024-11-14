@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <div class="container">
+        <button type="button" class="btn1" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="todoimg/404-tick.png" >
+            <h2>Thank you</h2>
+            <p>Your info has been submitted successfuly</p>
+            <button type="button" class="btn2" onclick="closePopup()">Ok</button>
+        </div>
+    </div>
+ <script>
+let popup = document.getElementById("popup");
+ function openPopup(){
+    popup.classList.add("open-popup");
+}
+function closePopup(){
+    popup.classList.remove("open-popup");
+}
+ </script>
+</body>
+</html>
